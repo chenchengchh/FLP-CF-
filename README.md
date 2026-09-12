@@ -193,3 +193,15 @@ python live_server.py --lipsync
 - **贴回色差**：椭圆参数必须换算到 256 工作空间（裁剪区≠256px 时坐标系 bug 会让椭圆罩住鼻区），上缘避开 UNet 遮罩重绘偏差区，低通差限幅校准消除 VAE 色偏
 - **KV 窗口**：`local_attn_size=21 + sink=1` 非侵入注入，抑制段内漂移
 - **通道格式**：VAE 用 channels_last 反而变慢（72.6→93ms），保持默认布局
+
+## 联系作者
+
+如有项目使用、二次开发、技术交流等需求，欢迎联系：
+
+- **邮箱**：[chenchengchh@126.com](mailto:chenchengchh@126.com)
+
+## ☕ 打赏
+
+如果这个项目帮到了你，欢迎请作者喝杯咖啡（自愿，感谢支持）。
+
+![微信打赏码](docs/donate.jpg)
