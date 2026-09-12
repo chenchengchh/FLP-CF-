@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+tts_cache/
+lipsync_bench/
+.ipynb_checkpoints/

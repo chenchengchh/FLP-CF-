@@ -1,0 +1,55 @@
+# ===== CF++ 直播服务核心依赖 (cfpp_env, Python 3.10+) =====
+# 安装: pip install -r requirements.txt  (torch 按本机 CUDA 版本另装)
+
+# --- 深度学习框架 ---
+torch>=2.4.0
+torchvision>=0.19.0
+accelerate>=1.1.1
+ninja
+einops
+easydict
+
+# --- 扩散模型 / 模型库 ---
+diffusers==0.31.0
+transformers>=4.49.0
+tokenizers>=0.20.3
+sentencepiece
+safetensors
+huggingface_hub[cli]
+open_clip_torch
+
+# --- 图像 / 视频 ---
+opencv-python>=4.9.0.80
+pillow
+imageio
+imageio-ffmpeg
+av==13.1.0
+scikit-image
+matplotlib
+numpy==1.24.4
+
+# --- Web 服务 / 通信 ---
+flask
+flask-socketio
+starlette
+
+# --- TTS 语音播报 (edge-tts, CPU, 在线合成) ---
+edge-tts
+
+# --- 文本处理 / 工具 ---
+tqdm
+ftfy
+omegaconf
+pydantic==2.10.6
+lmdb
+pycocotools
+dominate
+
+# --- 推理加速 (可选) ---
+onnx
+onnxruntime
+onnxscript
+onnxconverter_common
+torchao
+dashscope
+wandb
